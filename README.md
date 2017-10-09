@@ -1,6 +1,6 @@
 # ember-wretch
 
-This README outlines the details of collaborating on this Ember addon.
+An Ember Addon to configure [wretch](https://github.com/elbywan/wretch) polyfills.
 
 ## Installation
 

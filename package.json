@@ -1,6 +1,6 @@
 {
   "name": "ember-wretch",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "An Ember Addon to configure wretch polyfills.",
   "keywords": ["ember-addon"],
   "license": "MIT",
@@ -20,7 +20,7 @@
     "ember-cli-node-assets": "^0.2.2",
     "ember-fetch": "^3.4.0",
     "ember-url": "^0.5.0",
-    "wretch": "^0.2.4"
+    "wretch": "^1.0.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",

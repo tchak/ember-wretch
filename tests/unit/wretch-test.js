@@ -23,4 +23,23 @@ module('ember-wretch', function(hooks) {
         assert.equal(data.name, 'World');
       });
   });
+
+  test('wretch (with query)', function(assert) {
+    this.server.get('/omg/hello.json', function(request) {
+      return [
+        200,
+        { 'Content-Type': 'text/json' },
+        JSON.stringify({ name: `Hello ${request.queryParams.hey}` })
+      ];
+    });
+
+    return wretch('/omg')
+      .url('/hello.json')
+      .query({ hey: 'you' })
+      .get()
+      .json()
+      .then(data => {
+        assert.equal(data.name, 'Hello you');
+      });
+  });
 });
